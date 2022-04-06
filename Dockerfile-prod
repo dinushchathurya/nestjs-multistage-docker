@@ -1,8 +1,8 @@
-FROM node:14.17.5-alphine as prod
+FROM node:14.17.5-alpine as prod
 
 RUN npm i -g npm@7.20.1
 
-ARG NODE_ENV = production
+ARG NODE_ENV=production
 
 ENV NODE_ENV=${NODE_ENV}
 
